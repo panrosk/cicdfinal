@@ -1,0 +1,22 @@
+{
+  "name": "cicdfinal",
+  "version": "1.0.0",
+  "description": "Final project for cicd ",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "prepare": "git config core.hooksPath .githooks && chmod +x .githooks/*",
+    "start": "node index.js",
+    "test": "vitest",
+    "lint": "eslint .",
+    "lint:server": "eslint . --max-warnings=0"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "eslint": "^9.19.0",
+    "express": "^4.21.2",
+    "supertest": "^7.0.0",
+    "vitest": "^3.0.4"
+  }
+}
